@@ -1,0 +1,16 @@
+name: 'My Custom Action'
+description: 'An example action with custom branding'
+inputs:
+  my-input:
+    description: 'An input parameter'
+    required: true
+    default: 'default value'
+outputs:
+  my-output:
+    description: 'An output value'
+runs:
+  using: 'node12'  # or 'composite' or 'docker' based on your action type
+  main: 'index.js' # or entrypoint script for composite or docker
+branding:
+  icon: 'shield'  # Choose your Feather icon here
+  color: 'blue'   # Choose your color here
