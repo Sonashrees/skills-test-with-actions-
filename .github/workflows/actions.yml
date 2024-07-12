@@ -1,5 +1,7 @@
 name: 'My Custom Action'
 description: 'An example action with custom branding'
+on:
+ workflow_dispatch:
 inputs:
   my-input:
     description: 'An input parameter'
@@ -9,8 +11,9 @@ outputs:
   my-output:
     description: 'An output value'
 runs:
-  using: 'node12'  # or 'composite' or 'docker' based on your action type
-  main: 'index.js' # or entrypoint script for composite or docker
+  using: 'node12'
+  main: 'index.js'
 branding:
-  icon: 'shield'  # Choose your Feather icon here
-  color: 'blue'   # Choose your color here
+  icon: 'zap'
+  color: 'green'
+
